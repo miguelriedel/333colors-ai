@@ -1,10 +1,8 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": null,
   "rewrites": [
     {
       "source": "/",
-      "destination": "https://chatbase.co/C_lk_1lsiol-HkkHly10W/help"
+      "destination": "/help"
     },
     {
       "source": "/help",
@@ -17,10 +15,6 @@
     {
       "source": "/__cb/:path*",
       "destination": "https://chatbase.co/__cb/:path*"
-    },
-    {
-      "source": "/api/chat/C_lk_1lsiol-HkkHly10W",
-      "destination": "https://chatbase.co/api/chat/C_lk_1lsiol-HkkHly10W"
     },
     {
       "source": "/api/chat/C_lk_1lsiol-HkkHly10W/:path*",
