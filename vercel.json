@@ -1,0 +1,32 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/help",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/help",
+      "destination": "/api/proxy?path=/C_lk_1lsiol-HkkHly10W/help"
+    },
+    {
+      "source": "/help/:path*",
+      "destination": "/api/proxy?path=/C_lk_1lsiol-HkkHly10W/help/:path*"
+    },
+    {
+      "source": "/__cb/:path*",
+      "destination": "/api/proxy?path=/__cb/:path*"
+    },
+    {
+      "source": "/api/chat/C_lk_1lsiol-HkkHly10W",
+      "destination": "/api/proxy?path=/api/chat/C_lk_1lsiol-HkkHly10W"
+    },
+    {
+      "source": "/api/chat/C_lk_1lsiol-HkkHly10W/:path*",
+      "destination": "/api/proxy?path=/api/chat/C_lk_1lsiol-HkkHly10W/:path*"
+    }
+  ]
+}
