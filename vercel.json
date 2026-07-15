@@ -1,13 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
+  "rewrites": [
     {
       "source": "/",
-      "destination": "/help",
-      "permanent": false
-    }
-  ],
-  "rewrites": [
+      "destination": "/api/proxy?path=/C_Ik_1lsioL-HkkHIy10W/help"
+    },
     {
       "source": "/help",
       "destination": "/api/proxy?path=/C_Ik_1lsioL-HkkHIy10W/help"
